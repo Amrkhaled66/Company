@@ -1,0 +1,15 @@
+import { defineConfig } from "vite";
+import svgr from "e:/Amr/HTML/mainflare/company/node_modules/vite-plugin-svgr";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss(), svgr()],
+  resolve: {
+    alias: {
+      "@components": "/src/components",
+      src: "/src",
+    },
+  },
+});

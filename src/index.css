@@ -1,0 +1,68 @@
+/* ||Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Tailwind Config */
+@import "tailwindcss";
+@theme {
+  /* Colors */
+  --color-main: #6200ee;
+  --color-main-100: #cbc4ea;
+  --color-main-400: #7968c9;
+  --color-main-400: #8f80d2;
+  --color-main-600: #503cab;
+  --color-main-900: #1c0143;
+  --color-second: #eeecf8;
+  --color-subTitle: #666;
+  --color-stroke: #e0e0e0;
+
+  /* Fonts */
+  --font-main: "Poppins", sans-serif;
+
+  --padding-section-padding: 80px;
+  --padding-section-padding-mobile: 40px;
+}
+
+/* || reset */
+html {
+  overflow-x: hidden !important ;
+  height: auto;
+}
+body {
+  overflow: hidden !important ;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* || Classes */
+.container {
+  margin: auto;
+
+  @media (width < 40rem /* 640px */) {
+    width: 100%;
+    padding: 0 16px !important;
+  }
+  @media (width >= 40rem /* 640px */) {
+    max-width: 43rem;
+  }
+  @media (width >= 48rem /* 768px */) {
+    max-width: 48rem /* 768px */;
+    /* padding-top: 60; */
+  }
+  @media (width >= 64rem /* 1024px */) {
+    max-width: 70rem /* 1024px */;
+  }
+  @media (width >= 80rem /* 1280px */) {
+    padding: 0 100px !important ;
+    width: 100%;
+  }
+  @media (width >= 96rem /* 1536px */) {
+    max-width: 96rem /* 1536px */;
+  }
+}
