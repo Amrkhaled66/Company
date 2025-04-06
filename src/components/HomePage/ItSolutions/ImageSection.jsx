@@ -5,7 +5,7 @@ import { TbPlayerPlayFilled } from "react-icons/tb";
 
 export default function ImageSection() {
   return (
-    <div className="flex w-full gap-x-4 sm:justify-between md:gap-x-6">
+    <div className="flex w-full gap-x-4 sm:justify-between md:justify-start md:gap-x-6">
       <div className="w-[164px] space-y-5 sm:w-[327px] md:w-[260px]">
         <div className="border-stroke flex justify-between rounded-[30px] rounded-ee-none border px-8 py-4">
           <p className="-rotate-90 text-sm font-bold tracking-[2.38px]">

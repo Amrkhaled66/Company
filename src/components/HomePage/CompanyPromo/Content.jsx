@@ -19,8 +19,8 @@ export default function Content() {
   return (
     <div className="space-y-[20px] flex-1 md:space-y-[16px]">
       <div>
-        <h3 className="text-main-900 text-[34px] font-bold md:text-[40px]">
-          Increasing business success with technology{" "}
+        <h3 className="text-main-900 text-[34px] lg:w-[95%] leading-relaxed font-bold md:text-5xl">
+          Increasing business success with technology
         </h3>
       </div>
       <div className="space-y-[32px]">

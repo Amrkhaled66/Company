@@ -39,25 +39,25 @@ const ServicesItems = [
     icon: <ServiceIcon />,
     title: "Digital Marketing Services",
     subTitle: "Developing a comprehensive IT strategy that aligns.",
-    className: " rounded-ee-none ",
+    className: " !rounded-ee-none ",
   },
   {
     icon: <ServiceIcon />,
     title: "Digital Marketing Services",
     subTitle: "Developing a comprehensive IT strategy that aligns.",
-    className: " rounded-es-none ",
+    className: " !rounded-es-none ",
   },
   {
     icon: <ServiceIcon />,
     title: "Digital Marketing Services",
     subTitle: "Developing a comprehensive IT strategy that aligns.",
-    className: " rounded-se-none ",
+    className: " !rounded-se-none ",
   },
   {
     icon: <ServiceIcon />,
     title: "Digital Marketing Services",
     subTitle: "Developing a comprehensive IT strategy that aligns.",
-    className: " rounded-ss-none ",
+    className: " !rounded-ss-none ",
   },
 ];
 

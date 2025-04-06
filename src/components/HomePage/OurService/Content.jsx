@@ -2,13 +2,13 @@ import CTAButton from "src/components/ui/CTAButton";
 
 export default function Content() {
   return (
-    <div className="space-y-[20px] w-full md:space-y-[16px]">
+    <div className="w-full space-y-[20px] md:space-y-[16px] lg:w-1/2">
       <div className="space-y-[12px] md:space-y-[16px]">
         <h3 className="text-main text-xl font-bold tracking-[2.6px]">
           OUR SERVICE
         </h3>
-        <h2 className="text-main-900 text-[34px] leading-[129.51%] font-bold md:text-5xl">
-          Our awesome servicesto give you success
+        <h2 className="text-main-900 w-[85%] text-[34px] leading-[129.51%] font-bold md:text-5xl">
+          Our awesome services to give you success
         </h2>
       </div>
       <div className="space-y-[32px]">
@@ -21,7 +21,9 @@ export default function Content() {
         {/* <button className="bg-main hover:bg-main-600 h-[56px] w-[113px] rounded-2xl text-center font-bold text-white transition-all duration-300">
           View All
         </button> */}
-        <CTAButton>View All</CTAButton>
+        <CTAButton className="!text-main w-[160px] hover:bg-white bg-white">
+          View All
+        </CTAButton>
       </div>
     </div>
   );
