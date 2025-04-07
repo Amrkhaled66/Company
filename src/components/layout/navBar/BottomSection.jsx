@@ -5,8 +5,9 @@ import { GoSearch } from "react-icons/go";
 import { IoMenu } from "react-icons/io5";
 
 import { Link } from "react-router";
-
 import { useLocation } from "react-router";
+
+import navItems from "./navItems";
 const NavElement = ({ text, hasArrow, to = "/" }) => (
   <Link to={to} className="flex items-center gap-x-2 text-white">
     <span className="font-medium">{text}</span>
@@ -15,16 +16,6 @@ const NavElement = ({ text, hasArrow, to = "/" }) => (
 );
 
 const NavigationMenu = () => {
-  const navItems = [
-    { text: "Home", hasArrow: true },
-    { text: "Shop", hasArrow: false },
-    { text: "Service", hasArrow: false },
-    { text: "Portfolio", hasArrow: true },
-    { text: "Blog", hasArrow: true },
-    { text: "Pages", hasArrow: true },
-    { text: "Contact", hasArrow: true },
-  ];
-
   return (
     <div className="hidden gap-x-6 md:flex">
       {navItems.map((item) => (
@@ -56,24 +47,26 @@ const CartIcon = () => (
   </div>
 );
 
-export default function BottomSection({ isHeroSectionVisible }) {
+export default function BottomSection({ isHeroSectionVisible, onToggleMenu }) {
   const { pathname } = useLocation();
 
   return (
     <div
       className={`bg-main flex items-center justify-between transition-all duration-300 ${pathname === "/" && isHeroSectionVisible && "rounded-2xl"} px-4 py-5 text-white md:px-5`}
     >
-      <div className="flex items-center gap-x-3">
+      <Link to="/" className="flex items-center gap-x-3">
         <img src={Logo} alt="Main" className="h-10" />
         <span className="text-2xl font-bold md:text-3xl">Main</span>
-      </div>
+      </Link>
       <NavigationMenu />
       <div className="flex items-center gap-x-6">
         <div className="flex items-center gap-x-3">
           <GoSearch className="h-6 w-6 font-black" />
           <CartIcon />
         </div>
-        <IoMenu className="block md:hidden w-[30px] h-[30px] " />
+        <button onClick={onToggleMenu}>
+          <IoMenu className="block h-[30px] w-[30px] md:hidden" />
+        </button>
       </div>
       <button className="text-main hidden rounded-2xl bg-white px-4 py-2 font-bold md:block">
         Get In Touch

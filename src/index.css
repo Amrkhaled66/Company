@@ -56,7 +56,7 @@ input[type="checkbox"] {
     /* padding-top: 60; */
   }
   @media (width >= 64rem /* 1024px */) {
-    max-width: 70rem /* 1024px */;
+    max-width: 100rem /* 1024px */;
   }
   @media (width >= 80rem /* 1280px */) {
     padding: 0 100px !important ;

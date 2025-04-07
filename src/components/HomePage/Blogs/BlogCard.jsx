@@ -26,7 +26,7 @@ export default function BlogCard({
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-y-[12px] py-4 sm:items-start md:px-4">
         <div className="space-y-[8px]">
-          <p className="flex flex-col gap-y-1 text-sm font-[400] sm:flex-row md:items-center md:text-base">
+          <p className="flex flex-col gap-y-1 text-sm font-[400] sm:flex-row sm:items-center md:text-base">
             <p>{topic}</p>
             <GoDotFill className="h-[10px] w-[10px]" />
             <p>{interval}</p>

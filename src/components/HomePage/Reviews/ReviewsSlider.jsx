@@ -36,7 +36,15 @@ export default function ReviewsSlider() {
   const groupCount = Math.ceil(Reviews.length / groupSize);
 
   const handleDotClick = (groupIndex) => {
-    swiperRefTablet.current.slideTo(groupIndex);
+    if  (windowWidth >= 768) {
+      swiperRefDesktop.current.slideTo(groupIndex);
+    }
+    if(windowWidth >= 640) {
+      swiperRefTablet.current.slideTo(groupIndex);
+    }
+    else {
+      swiperRefMobile.current.slideTo(groupIndex);
+    }
   };
 
   const handleSlideChange = (swiper) => {
