@@ -1,7 +1,7 @@
 import ContentSection from "src/components/HomePage/HeroSection/ContentSection";
 import BigEllipse from "src/assets/BigEllipse.svg?react";
 import Ellipse from "src/assets/Ellipse.svg?react";
-import Dots from "src/assets/Dots.svg?react";
+import Dots from "src/assets/dots.svg?react";
 import ImageSection from "src/components/HomePage/HeroSection/ImageSections";
 
 import { useIntersection } from "src/context/IntersectionCtx";
