@@ -3,8 +3,8 @@ const navItems = [
   { text: "Shop", hasArrow: false },
   { text: "Service", hasArrow: false, to: "service" },
   { text: "Portfolio", hasArrow: true, to: "portfolio" },
-  { text: "Blog", hasArrow: true },
-  { text: "Pages", hasArrow: true },
+  { text: "Blog", to: "blogs" },
+  { text: "AboutUs", to: "aboutus" },
   { text: "Contact", to: "contact" },
 ];
 

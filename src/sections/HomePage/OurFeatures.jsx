@@ -77,7 +77,7 @@ const Feature = ({ icon, title, subTitle }) => {
 
 export default function OurFeatures() {
   return (
-    <div className="bg-second py-section-padding-mobile md:py-section-padding">
+    <div className="bg-second py-section-padding-mobile sm:py-[60px] md:py-section-padding">
       <div className="container flex flex-col items-center justify-between gap-y-5 md:flex-row">
         {data.map((item) => (
           <Feature key={item.title} {...item} />

@@ -67,9 +67,8 @@ export default function Portfolio() {
       <ContentPage title="Portfolio" img={portfolio}>
         <div className="">
           <div className="bg-second py-[40px] sm:py-[60px] md:py-[80px]">
-            <div className=" container " >
-
-            <ProjectsCards Cards={Cards} />
+            <div className="container">
+              <ProjectsCards Cards={Cards} />
             </div>
           </div>
           <CTA />

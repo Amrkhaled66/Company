@@ -2,7 +2,14 @@ import { Route, Routes, BrowserRouter as Router } from "react-router";
 
 import MainLayout from "./layout/MainLayout";
 
-import { HomePage,Portfolio,OurServices,Contact } from "src/pages";
+import {
+  HomePage,
+  Portfolio,
+  OurServices,
+  Contact,
+  AboutUs,
+  Blogs,
+} from "src/pages";
 
 const Paths = () => {
   return (
@@ -13,6 +20,8 @@ const Paths = () => {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="service" element={<OurServices />} />
           <Route path="Contact" element={<Contact />} />
+          <Route path="aboutus" element={<AboutUs />} />
+          <Route path="blogs" element={<Blogs />} />
         </Route>
       </Routes>
     </Router>

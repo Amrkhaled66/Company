@@ -66,3 +66,13 @@ input[type="checkbox"] {
     max-width: 96rem /* 1536px */;
   }
 }
+
+.clip {
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 38% 75%, 0 100%, 0% 70%, 0% 35%, 0 0);
+}
+
+@media (width>=48rem) {
+  .clip {
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 34% 52%, 0% 0%);
+  }
+}

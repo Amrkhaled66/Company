@@ -2,7 +2,7 @@ import Cta from "src/assets/cta.webp";
 import CTAButton from "src/components/ui/CTAButton";
 export default function CTA() {
   return (
-    <div className="py-section-padding-mobile md:py-section-padding text-white">
+    <div className="py-section-padding-mobile sm:py-[60px] md:py-section-padding text-white">
       <div className="container">
         <div
           className="flex w-full flex-col items-center gap-y-8 rounded-3xl py-6 text-center"
