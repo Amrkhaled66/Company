@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function BlogCard({ title, subTitle, data, category, img }) {
   return (
-    <div className="border-stroke h-fit overflow-hidden rounded-2xl border">
+    <div className="border-stroke max-h-[504px]  overflow-hidden rounded-2xl border">
       <div className="h-[200px] w-full overflow-hidden">
         <img src={img} className="h-full w-full object-cover" alt="" />
       </div>

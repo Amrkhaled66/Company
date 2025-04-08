@@ -1,5 +1,5 @@
 import ContentPage from "src/components/ui/ContentPage";
-import BlogCards from "src/sections/Blogs/BlogsCads";
+import BlogCards from "src/sections/Blogs/BlogsCards";
 import BlogsBar from "src/sections/Blogs/Bar/index";
 
 import BlogsImg from "src/assets/blogs.webp";
