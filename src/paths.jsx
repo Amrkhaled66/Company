@@ -9,6 +9,7 @@ import {
   Contact,
   AboutUs,
   Blogs,
+  Shop
 } from "src/pages";
 
 const Paths = () => {
@@ -22,6 +23,7 @@ const Paths = () => {
           <Route path="Contact" element={<Contact />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="blogs" element={<Blogs />} />
+          <Route path="shop" element={<Shop />} />
         </Route>
       </Routes>
     </Router>

@@ -38,7 +38,7 @@ const Blogs = [
 
 export default function BlogCards() {
   return (
-    <div className="relative flex flex-wrap justify-center grid-cols-2  gap-[13px] md:gap-6">
+    <div className="relative grid grid-cols-[auto_auto] justify-center gap-[13px] md:gap-6">
       {Blogs.map((blog, index) => (
         <BlogCard key={index} {...blog} />
       ))}

@@ -1,0 +1,21 @@
+import ProductCard from "src/components/Shop/ProductCard";
+import { FaFilter } from "react-icons/fa6";
+
+export default function Products({ Products, setSidebarOpen }) {
+  return (
+    <div className="flex h-fit flex-1 flex-col gap-y-6">
+      <button
+        onClick={() => setSidebarOpen(true)}
+        className="bg-main flex w-fit items-center gap-2 rounded-2xl px-4 py-2 text-white"
+      >
+        <FaFilter />
+        Filter
+      </button>
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-5 md:grid-cols-3 md:gap-6">
+        {Products.map((product) => (
+          <ProductCard key={product.name} {...product} />
+        ))}
+      </div>
+    </div>
+  );
+}

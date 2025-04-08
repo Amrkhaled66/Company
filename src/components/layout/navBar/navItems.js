@@ -1,6 +1,6 @@
 const navItems = [
   { text: "Home", hasArrow: true },
-  { text: "Shop", hasArrow: false },
+  { text: "Shop", hasArrow: false, to: "shop" },
   { text: "Service", hasArrow: false, to: "service" },
   { text: "Portfolio", hasArrow: true, to: "portfolio" },
   { text: "Blog", to: "blogs" },
