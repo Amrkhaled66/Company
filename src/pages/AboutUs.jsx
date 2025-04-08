@@ -9,7 +9,9 @@ import Banner from "src/sections/AboutUs/Banner";
 
 import about from "src/assets/about.webp";
 
+import useUpdatePageTitle from "src/hooks/useUpdatePageTitle";
 export default function AboutUs() {
+  useUpdatePageTitle("AboutUs");
   return (
     <ContentPage img={about} title="AboutUs">
       <IntroSection />

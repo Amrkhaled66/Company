@@ -13,6 +13,8 @@ import project7 from "src/assets/project7.webp";
 import project8 from "src/assets/project8.webp";
 import project9 from "src/assets/project9.webp";
 
+import useUpdatePageTitle from "src/hooks/useUpdatePageTitle";
+
 const Cards = [
   {
     title: "Digital Product Design",
@@ -62,6 +64,7 @@ const Cards = [
 ];
 
 export default function Portfolio() {
+  useUpdatePageTitle("Portfolio");
   return (
     <div>
       <ContentPage title="Portfolio" img={portfolio}>

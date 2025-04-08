@@ -9,11 +9,15 @@ import { useState } from "react";
 
 import CTA from "src/sections/HomePage/CTA";
 
+import useUpdatePageTitle from "src/hooks/useUpdatePageTitle";
+
 export default function Blogs() {
   const [search, setSearch] = useState("");
   const filteredBlogs = BlogsData.filter((blog) =>
     blog.title.toLowerCase().includes(search.toLowerCase()),
   );
+
+  useUpdatePageTitle("Blogs");
 
   const onSearch = (e) => {
     e.preventDefault();

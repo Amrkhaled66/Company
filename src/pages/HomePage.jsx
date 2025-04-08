@@ -10,8 +10,10 @@ import Blogs from "src/sections/HomePage/Blogs";
 import Pricing from "src/sections/HomePage/Pricing";
 import CTA from "src/sections/HomePage/CTA";
 
+import useUpdatePageTitle from "src/hooks/useUpdatePageTitle";
+
 const HomePage = () => {
- 
+  useUpdatePageTitle("Main");
   return (
     <>
       <HeroSection />
