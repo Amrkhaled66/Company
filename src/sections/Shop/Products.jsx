@@ -6,7 +6,7 @@ export default function Products({ Products, setSidebarOpen }) {
     <div className="flex h-fit flex-1 flex-col gap-y-6">
       <button
         onClick={() => setSidebarOpen(true)}
-        className="bg-main flex w-fit items-center gap-2 rounded-2xl px-4 py-2 text-white"
+        className="bg-main flex md:hidden w-fit items-center gap-2 rounded-2xl px-4 py-2 text-white"
       >
         <FaFilter />
         Filter
