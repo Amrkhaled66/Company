@@ -118,12 +118,12 @@ const elements = [
 
 const Element = ({ icon, title, num, suffix = "+" }) => {
   return (
-    <div className="mx-auto flex flex-col items-center gap-x-5 gap-y-5 px-2 text-white md:flex-row">
-      <div className="flex h-[74px] w-[74px] items-center justify-center rounded-2xl bg-white p-5 md:h-[86px] md:w-[86px]">
+    <div className="mx-auto flex flex-col items-center gap-x-5 gap-y-5 px-2 text-white lg:flex-row">
+      <div className="flex h-[74px] w-[74px] items-center justify-center rounded-2xl bg-white p-5 lg:h-[86px] lg:w-[86px]">
         {icon}
       </div>
-      <div className="space-y-1 text-center md:space-y-2">
-        <p className="space-x-1 text-[34px] font-bold md:text-[48px]">
+      <div className="space-y-1 text-center lg:space-y-2">
+        <p className="space-x-1 text-[34px] font-bold lg:text-[48px]">
           {num}
           {suffix}
         </p>
@@ -137,7 +137,7 @@ export default function Banner() {
   return (
     <div className="bg-main">
       <div className="container">
-        <div className="grid grid-cols-2 gap-x-11 gap-y-10 py-10 sm:grid-cols-4 md:py-15">
+        <div className="grid grid-cols-2 gap-x-11 gap-y-10 py-10 sm:grid-cols-4 lg:py-15">
           {elements.map((element, index) => (
             <Element key={index} {...element} />
           ))}

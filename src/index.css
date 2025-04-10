@@ -52,7 +52,7 @@ input[type="checkbox"] {
     max-width: 43rem;
   }
   @media (width >= 48rem /* 768px */) {
-    max-width: 48rem /* 768px */;
+    max-width: 46rem;
     /* padding-top: 60; */
   }
   @media (width >= 64rem /* 1024px */) {
@@ -82,9 +82,8 @@ input[type="checkbox"] {
   );
 }
 
-@media (width>=48rem) {
+@media (width>=64rem ) {
   .clip {
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 34% 52%, 0% 0%);
   }
 }
-

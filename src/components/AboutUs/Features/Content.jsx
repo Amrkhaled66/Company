@@ -6,7 +6,7 @@ const cards = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-[36px] w-[36px] md:h-[50px] md:w-[50px]"
+        className="h-[36px] w-[36px] lg:h-[50px] lg:w-[50px]"
         viewBox="0 0 50 50"
         fill="none"
       >
@@ -24,7 +24,7 @@ const cards = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-[36px] w-[36px] md:h-[50px] md:w-[50px]"
+        className="h-[36px] w-[36px] lg:h-[50px] lg:w-[50px]"
         viewBox="0 0 48 48"
         fill="none"
       >
@@ -81,7 +81,7 @@ const cards = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-[36px] w-[36px] md:h-[50px] md:w-[50px]"
+        className="h-[36px] w-[36px] lg:h-[50px] lg:w-[50px]"
         viewBox="0 0 50 50"
         fill="none"
       >
@@ -197,13 +197,13 @@ const cards = [
 
 function Card({ icon, title, subTitle }) {
   return (
-    <div className="flex h-fit w-full gap-x-4 rounded-2xl text-white md:w-full">
-      <div className="flex h-[74px] w-[74px] p-5 items-center justify-center rounded-2xl bg-white md:h-[86px] md:w-[86px]">
+    <div className="flex h-fit w-full gap-x-4 rounded-2xl text-white lg:w-full">
+      <div className="flex h-[74px] w-[74px] items-center justify-center rounded-2xl bg-white p-5 lg:h-[86px] lg:w-[86px]">
         {icon}
       </div>
       <div className="flex h-full flex-col gap-y-2">
         <h4 className="text-xl font-bold">{title}</h4>
-        <p className="font-[300] md:h-[48px]">{subTitle}</p>
+        <p className="font-[300] lg:h-[48px]">{subTitle}</p>
       </div>
     </div>
   );
@@ -211,9 +211,9 @@ function Card({ icon, title, subTitle }) {
 
 export default function Content() {
   return (
-    <div className="z-10 w-full space-y-7 p-4 md:p-8 text-white md:w-[60%]">
+    <div className="z-10 w-full space-y-7 p-4 text-white lg:w-[60%] lg:p-8">
       <div className="space-y-4">
-        <h2 className="text-[34px] font-bold md:text-[48px]">
+        <h2 className="text-[34px] font-bold lg:text-[48px]">
           Providing IT solutions & services for SaaS
         </h2>
         <p className="font-[300]">

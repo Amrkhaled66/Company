@@ -17,19 +17,19 @@ const ProgressElement = ({ title, percentage }) => {
 
 export default function Content() {
   return (
-    <div className="space-y-[20px] flex-1 md:space-y-[16px]">
+    <div className="flex-1 space-y-[20px] lg:space-y-[16px]">
       <div>
-        <h3 className="text-main-900 text-[34px] lg:w-[95%] leading-relaxed font-bold md:text-5xl">
+        <h3 className="text-main-900 text-[34px] leading-relaxed font-bold lg:w-[95%] lg:text-5xl">
           Increasing business success with technology
         </h3>
       </div>
       <div className="space-y-[32px]">
-        <p className="text-main-900 w-[343px] font-[400] sm:w-full md:w-[525px]">
+        <p className="text-main-900 w-[343px] font-[400] sm:w-full lg:w-[525px]">
           Each demo built with Teba will look different. You can customize
           almost anything in the appearance of your website with only a few
           clicks. Each demo built with Teba will look different.
         </p>
-        <div className="space-y-[20px] md:space-y-[24px]">
+        <div className="space-y-[20px] lg:space-y-[24px]">
           <ProgressElement title="IT Solution & Management" percentage={86} />
           <ProgressElement title="Website & App Development" percentage={74} />
           <ProgressElement title="SEO & Digital Marketing" percentage={86} />

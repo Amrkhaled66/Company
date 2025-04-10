@@ -17,7 +17,7 @@ const NavElement = ({ text, hasArrow, to = "/" }) => (
 
 const NavigationMenu = () => {
   return (
-    <div className="hidden gap-x-6 md:flex">
+    <div className="hidden gap-x-6 lg:flex">
       {navItems.map((item) => (
         <NavElement key={item.text} {...item} />
       ))}
@@ -52,11 +52,11 @@ export default function BottomSection({ isHeroSectionVisible, onToggleMenu }) {
 
   return (
     <div
-      className={`bg-main flex items-center justify-between transition-all duration-300 ${pathname === "/" && isHeroSectionVisible && "rounded-2xl"} px-4 py-5 text-white md:px-5`}
+      className={`bg-main flex items-center justify-between transition-all duration-300 ${pathname === "/" && isHeroSectionVisible && "rounded-2xl"} px-4 py-5 text-white lg:px-5`}
     >
       <Link to="/" className="flex items-center gap-x-3">
         <img src={Logo} alt="Main" className="h-10" />
-        <span className="text-2xl font-bold md:text-3xl">Main</span>
+        <span className="text-2xl font-bold lg:text-3xl">Main</span>
       </Link>
       <NavigationMenu />
       <div className="flex items-center gap-x-6">
@@ -65,10 +65,10 @@ export default function BottomSection({ isHeroSectionVisible, onToggleMenu }) {
           <CartIcon />
         </div>
         <button onClick={onToggleMenu}>
-          <IoMenu className="block h-[30px] w-[30px] md:hidden" />
+          <IoMenu className="block h-[30px] w-[30px] lg:hidden" />
         </button>
       </div>
-      <button className="text-main hidden rounded-2xl bg-white px-4 py-2 font-bold md:block">
+      <button className="text-main hidden rounded-2xl bg-white px-4 py-2 font-bold lg:block">
         Get In Touch
       </button>
     </div>

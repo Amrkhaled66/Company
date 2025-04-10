@@ -1,13 +1,13 @@
 const InputField = ({ label, placeholder, type = "text", bg }) => (
   <div className="w-full">
     <label
-      className={`text-main-900 flex flex-col gap-y-4 font-bold md:gap-y-2`}
+      className={`text-main-900 flex flex-col gap-y-4 font-bold lg:gap-y-2`}
     >
       {label}
       <input
         type={type}
         placeholder={placeholder}
-        className={`placeholder:text-subTitle  !font-normal rounded-2xl bg-white px-4 py-2 outline-none placeholder:font-normal ${bg == "bg-white" && "border-stroke border !bg-[#F4F4F4]"} `}
+        className={`placeholder:text-subTitle rounded-2xl bg-white px-4 py-2 !font-normal outline-none placeholder:font-normal ${bg == "bg-white" && "border-stroke border !bg-[#F4F4F4]"} `}
       />
     </label>
   </div>
@@ -15,11 +15,11 @@ const InputField = ({ label, placeholder, type = "text", bg }) => (
 
 const TextareaField = ({ label, placeholder, bg }) => (
   <div className="w-full">
-    <label className="text-main-900 flex flex-col gap-y-4 font-bold md:gap-y-2">
+    <label className="text-main-900 flex flex-col gap-y-4 font-bold lg:gap-y-2">
       {label}
       <textarea
         placeholder={placeholder}
-        className={`placeholder:text-subTitle !font-normal border-stroke h-[100px] resize-none rounded-2xl ${bg == "bg-white" && "border-stroke border !bg-[#F4F4F4]"} bg-white px-4 py-2 outline-none placeholder:font-normal`}
+        className={`placeholder:text-subTitle border-stroke h-[100px] resize-none rounded-2xl !font-normal ${bg == "bg-white" && "border-stroke border !bg-[#F4F4F4]"} bg-white px-4 py-2 outline-none placeholder:font-normal`}
       />
     </label>
   </div>
@@ -28,7 +28,7 @@ const TextareaField = ({ label, placeholder, bg }) => (
 export default function Form({ bgColor = "bg-second" }) {
   return (
     <div
-      className={`${bgColor} w-full space-y-[40px] rounded-2xl p-8 md:w-1/2 md:space-y-[76px]`}
+      className={`${bgColor} w-full space-y-[40px] rounded-2xl p-8 lg:w-1/2 lg:space-y-[76px]`}
     >
       {/* Header */}
       <div className="space-y-3">

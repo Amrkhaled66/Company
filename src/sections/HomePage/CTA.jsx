@@ -2,7 +2,7 @@ import Cta from "src/assets/cta.webp";
 import CTAButton from "src/components/ui/CTAButton";
 export default function CTA() {
   return (
-    <div className="py-section-padding-mobile sm:py-[60px] md:py-section-padding text-white">
+    <div className="py-section-padding-mobile lg:py-section-padding text-white sm:py-[60px]">
       <div className="container">
         <div
           className="flex w-full flex-col items-center gap-y-8 rounded-3xl py-6 text-center"
@@ -11,10 +11,10 @@ export default function CTA() {
           }}
         >
           <div className="flex flex-col items-center gap-y-4">
-            <h4 className="w-[90%] text-[36px] font-bold md:w-full md:text-[48px]">
+            <h4 className="w-[90%] text-[36px] font-bold lg:w-full lg:text-[48px]">
               Let’s work together
             </h4>
-            <p className="w-[311px] text-base sm:w-[90%] md:w-[642px] md:text-xl">
+            <p className="w-[311px] text-base sm:w-[90%] lg:w-[642px] lg:text-xl">
               Each demo built with Teba will look different. You can customize
               anything appearance of your website with only a few clicks
             </p>

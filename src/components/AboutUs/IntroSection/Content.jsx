@@ -15,7 +15,7 @@ const Content = () => {
   return (
     <div className="flex-1 space-y-6">
       <div className="space-y-4">
-        <h2 className="text-main-900 text-[34px] font-bold md:text-[48px]">
+        <h2 className="text-main-900 text-[34px] font-bold lg:text-[48px]">
           Exclusive technology to provide IT solutions
         </h2>
         <p className="text-subTitle">

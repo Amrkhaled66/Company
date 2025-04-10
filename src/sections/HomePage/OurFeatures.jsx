@@ -61,12 +61,12 @@ const data = [
 
 const Feature = ({ icon, title, subTitle }) => {
   return (
-    <div className="flex w-full items-center gap-x-4 md:gap-x-5 rounded-2xl bg-white p-3 md:w-[397px]">
-      <div className="bg-second flex items-center justify-center rounded-2xl p-4 md:p-5">
+    <div className="flex w-full items-center gap-x-4 rounded-2xl bg-white p-3 lg:w-[397px] lg:gap-x-5">
+      <div className="bg-second flex items-center justify-center rounded-2xl p-4 lg:p-5">
         {icon}
       </div>
       <div className="space-y-[8px]">
-        <h2 className="font-bold text-base sm:text-xl">{title}</h2>
+        <h2 className="text-base font-bold sm:text-xl">{title}</h2>
         <p className="text-subTitle text-sm font-[400] sm:text-base">
           {subTitle}
         </p>
@@ -77,8 +77,8 @@ const Feature = ({ icon, title, subTitle }) => {
 
 export default function OurFeatures() {
   return (
-    <div className="bg-second py-section-padding-mobile sm:py-[60px] md:py-section-padding">
-      <div className="container flex flex-col items-center justify-between gap-y-5 md:flex-row">
+    <div className="bg-second py-section-padding-mobile lg:py-section-padding sm:py-[60px]">
+      <div className="container flex flex-col items-center justify-between gap-y-5 lg:flex-row">
         {data.map((item) => (
           <Feature key={item.title} {...item} />
         ))}

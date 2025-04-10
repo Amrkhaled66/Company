@@ -27,15 +27,21 @@ export default function Shop() {
   });
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  console.log(sidebarOpen)
+  console.log(sidebarOpen);
   usePageTitle("Shop");
   return (
     <ContentPage img={cover} title="Shop">
-      <div className="py-section-padding-mobile md:py-section-padding sm:py-[60px]">
+      <div className="py-section-padding-mobile lg:py-section-padding sm:py-[60px]">
         <div className="container space-y-[50px]">
           <div className="flex items-start gap-x-6">
-            <FilterBar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            <Products setSidebarOpen={setSidebarOpen} Products={currentElements} />
+            <FilterBar
+              sidebarOpen={sidebarOpen}
+              setSidebarOpen={setSidebarOpen}
+            />
+            <Products
+              setSidebarOpen={setSidebarOpen}
+              Products={currentElements}
+            />
           </div>
           <Pagination
             goToPrev={goToPrev}

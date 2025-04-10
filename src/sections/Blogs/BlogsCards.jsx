@@ -18,8 +18,8 @@ export default function BlogCards({ filteredBlogs }) {
   });
 
   return (
-    <div className="flex flex-1 flex-col gap-y-[20px] md:gap-y-[50px]">
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6">
+    <div className="flex flex-1 flex-col gap-y-[20px] lg:gap-y-[50px]">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
         {paginatedBlogs.map((blog, index) => (
           <BlogCard key={index} {...blog} />
         ))}

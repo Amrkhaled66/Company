@@ -40,7 +40,7 @@ const SocialIcon = ({ icon }) => {
 
 const Card = ({ name, position, img }) => {
   return (
-    <div className="group border-stroke relative h-fit w-full overflow-hidden rounded-2xl sm:w-[330px] border bg-white drop-shadow-lg md:w-[292px]">
+    <div className="group border-stroke relative h-fit w-full overflow-hidden rounded-2xl border bg-white drop-shadow-lg sm:w-[330px] lg:w-[292px]">
       <div className="h-[363px] w-full cursor-pointer overflow-hidden">
         <img
           src={img}
@@ -63,7 +63,7 @@ const Card = ({ name, position, img }) => {
 
 export default function TeamCards() {
   return (
-    <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-4 w-full flex-col justify-center gap-5 md:flex-row md:gap-x-6">
+    <div className="grid w-full grid-cols-1 flex-col justify-center gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:flex-row lg:gap-x-6">
       {Cards.map((card, index) => (
         <Card key={index} {...card} />
       ))}

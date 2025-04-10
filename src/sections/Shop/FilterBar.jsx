@@ -63,7 +63,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
   return (
     <div
-      className={`top-0  left-0 z-50 md:z-40 h-full space-y-6 overflow-y-scroll bg-white px-[32px] py-[50px] md:overflow-y-hidden md:rounded-2xl md:p-0 ${sidebarOpen ? "fixed md:block" : "hidden"} md:block`}
+      className={`top-0 left-0 z-50 h-full space-y-6 overflow-y-scroll bg-white px-[32px] py-[50px] lg:z-40 lg:overflow-y-hidden lg:rounded-2xl lg:p-0 ${sidebarOpen ? "fixed lg:block" : "hidden"} lg:block`}
     >
       <button
         className="text-main-900 absolute top-0 right-0 flex h-[36px] w-[36px] items-center justify-center bg-[#EFEFEF] text-2xl"
@@ -151,7 +151,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           <ColorSelector colors={colors} />
         </div>
 
-        <button className="bg-main mt-4 h-[43px] w-full rounded-xl font-semibold text-white md:h-[60px]">
+        <button className="bg-main mt-4 h-[43px] w-full rounded-xl font-semibold text-white lg:h-[60px]">
           Apply Now
         </button>
       </Section>

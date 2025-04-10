@@ -27,8 +27,8 @@ const Cards = [
       "Free lifetime updates facility",
       "Free one year support",
       "24/7 Support",
-      ],
-    isPrimary: true
+    ],
+    isPrimary: true,
   },
   {
     title: "Business",
@@ -48,7 +48,7 @@ const Cards = [
 
 export default function PricingCards() {
   return (
-    <div className=" flex flex-col md:flex-row gap-y-5 gap-x-6 " >
+    <div className="flex flex-col gap-x-6 gap-y-5 lg:flex-row">
       {Cards.map((card, index) => (
         <Card key={index} {...card} />
       ))}

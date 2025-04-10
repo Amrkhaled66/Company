@@ -31,8 +31,8 @@ export default function Blogs() {
   return (
     <ContentPage img={BlogsImg} title="Blogs">
       <div className="container">
-        <div className="py-section-padding-mobile md:py-section-padding space-y-[50px] sm:py-[60px]">
-          <div className="flex flex-col gap-x-6 md:flex-row">
+        <div className="py-section-padding-mobile lg:py-section-padding space-y-[50px] sm:py-[60px]">
+          <div className="flex flex-col gap-x-6 lg:flex-row">
             <BlogCards filteredBlogs={filteredBlogs} />
             <BlogsBar onSearch={onSearch} />
           </div>

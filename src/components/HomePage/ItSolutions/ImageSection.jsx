@@ -5,8 +5,8 @@ import { TbPlayerPlayFilled } from "react-icons/tb";
 
 export default function ImageSection() {
   return (
-    <div className="flex w-full gap-x-4 sm:justify-between md:justify-start md:gap-x-6">
-      <div className="w-[164px] space-y-5 sm:w-[327px] md:w-[260px]">
+    <div className="flex w-full gap-x-4 sm:justify-between lg:justify-start lg:gap-x-6">
+      <div className="w-[164px] space-y-5 sm:w-[327px] lg:w-[260px]">
         <div className="border-stroke flex justify-between rounded-[30px] rounded-ee-none border px-8 py-4">
           <p className="-rotate-90 text-sm font-bold tracking-[2.38px]">
             INTRO
@@ -15,7 +15,7 @@ export default function ImageSection() {
             <TbPlayerPlayFilled className="h-[24px] w-[24px] rounded-full" />
           </div>
         </div>
-        <div className="h-[400px] overflow-hidden rounded-[74px] rounded-se-none sm:h-[653px] md:h-[500px]">
+        <div className="h-[400px] overflow-hidden rounded-[74px] rounded-se-none sm:h-[653px] lg:h-[500px]">
           <img
             loading="lazy"
             src={staff}
@@ -25,7 +25,7 @@ export default function ImageSection() {
         </div>
       </div>
       <div className="space-y-[17px]">
-        <div className="h-[300px] w-[164px] overflow-hidden rounded-[74px] rounded-es-none sm:h-[522px] sm:w-[327px] md:h-[400px] md:w-[260px]">
+        <div className="h-[300px] w-[164px] overflow-hidden rounded-[74px] rounded-es-none sm:h-[522px] sm:w-[327px] lg:h-[400px] lg:w-[260px]">
           <img
             loading="lazy"
             src={staff2}
@@ -33,7 +33,7 @@ export default function ImageSection() {
             alt=""
           />
         </div>
-        <div className="bg-main flex h-[87px] items-center justify-center gap-x-2 rounded-3xl rounded-ss-none px-2 py-4 text-white sm:h-[113px] sm:gap-x-6 sm:px-0 md:gap-x-[20px]">
+        <div className="bg-main flex h-[87px] items-center justify-center gap-x-2 rounded-3xl rounded-ss-none px-2 py-4 text-white sm:h-[113px] sm:gap-x-6 sm:px-0 lg:gap-x-[20px]">
           <p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

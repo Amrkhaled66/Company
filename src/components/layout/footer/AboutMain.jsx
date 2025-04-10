@@ -15,9 +15,9 @@ const SocialIcon = ({ icon }) => {
 
 export default function AboutMe() {
   return (
-    <div className="space-y-[32px] w-[500px]">
+    <div className="w-[500px] space-y-[32px]">
       <div className="space-y-[27px]">
-        <div className="flex items-center gap-x-2 md:gap-x-1">
+        <div className="flex items-center gap-x-2 lg:gap-x-1">
           <Logo />
           <span className="text-[30px] font-bold">Main</span>
         </div>

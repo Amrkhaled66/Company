@@ -395,7 +395,7 @@ import ServiceCard2 from "src/components/Services/ServiceCard2";
 export default function BottomServices() {
   return (
     <div>
-      <div className="grid grid-cols-1  gap-5 sm:grid-cols-2 md:gap-6">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
         {ServicesItems.map((item, index) => (
           <ServiceCard2 key={index} {...item} />
         ))}

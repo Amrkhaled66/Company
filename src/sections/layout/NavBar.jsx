@@ -17,10 +17,9 @@ export default function NavBar() {
   };
 
   const isinHome = pathname === "/";
-  console.log(isinHome && isHeroSectionVisible)
   return (
     <div
-      className={`fixed right-0 ${isHeroSectionVisible && "mt-6 md:mt-0"} left-0 z-50 mx-auto w-full transition-all duration-300 md:bg-white ${!isHeroSectionVisible && "!bg-main"}`}
+      className={`fixed right-0 ${isHeroSectionVisible && "mt-6 lg:mt-0"} left-0 z-50 mx-auto w-full transition-all duration-300 lg:bg-white ${!isHeroSectionVisible && "!bg-main"}`}
     >
       <div className="container mx-auto">
         {isinHome && isHeroSectionVisible && <TopSection />}

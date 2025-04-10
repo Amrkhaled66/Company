@@ -46,7 +46,7 @@ const LanguageSelector = () => (
 
 export default function TopSection({ isHeroSectionVisible }) {
   return (
-    <div className={`hidden items-center justify-between py-3.5 md:flex`}>
+    <div className={`hidden items-center justify-between py-3.5 lg:flex`}>
       {/* Left */}
       <div className="flex gap-x-7.5">
         <IconText

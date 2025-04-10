@@ -38,11 +38,11 @@ const Blogs = [
 
 export default function BlogCards() {
   return (
-    <div className="relative grid grid-cols-[auto_auto] justify-center gap-[13px] md:gap-6">
+    <div className="relative grid grid-cols-[auto_auto] justify-center gap-[13px] lg:gap-6">
       {Blogs.map((blog, index) => (
         <BlogCard key={index} {...blog} />
       ))}
-      <div className="absolute top-1/2 right-1/2 z-20 h-[89px] w-[89px] translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border-[5px] border-white sm:h-[140px] sm:w-[140px] md:h-[280px] md:w-[280px] md:border-[12px]">
+      <div className="absolute top-1/2 right-1/2 z-20 h-[89px] w-[89px] translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border-[5px] border-white sm:h-[140px] sm:w-[140px] lg:h-[280px] lg:w-[280px] lg:border-[12px]">
         <img src={blogCenter} className="h-full w-full object-cover" alt="" />
       </div>
     </div>

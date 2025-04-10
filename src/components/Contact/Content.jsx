@@ -4,9 +4,9 @@ import { IoIosCalendar } from "react-icons/io";
 
 export default function Content() {
   return (
-    <div className="h-auto w-full space-y-[50px] md:w-1/2">
+    <div className="h-auto w-full space-y-[50px] lg:w-1/2">
       <div className="space-y-6">
-        <h4 className="text-main-900 text-[34px] font-bold md:text-[48px]">
+        <h4 className="text-main-900 text-[34px] font-bold lg:text-[48px]">
           Let’s build some awesome project together with AI Image
         </h4>
         <p className="text-main-900">

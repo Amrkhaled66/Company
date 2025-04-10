@@ -10,7 +10,7 @@ const ServicesItems = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-[42px] w-[42px] md:h-[52px] md:w-[52px]"
+        className="h-[42px] w-[42px] lg:h-[52px] lg:w-[52px]"
         viewBox="0 0 52 52"
         fill="none"
       >
@@ -23,7 +23,7 @@ const ServicesItems = [
     title: "Initiation & Planning",
     subTitle:
       "We are architects innovation trailblazers of technological advancement",
-    className: "md:rounded-ee-none",
+    className: "lg:rounded-ee-none",
     imagePos: "bottom-0 right-0 rounded-ss-[1000px]",
     objectTarget: "-128.426px 1.574px / 331.407% 186.267% no-repeat",
     mobileImg: image4,
@@ -32,7 +32,7 @@ const ServicesItems = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-[42px] w-[42px] md:h-[52px] md:w-[52px]"
+        className="h-[42px] w-[42px] lg:h-[52px] lg:w-[52px]"
         viewBox="0 0 52 52"
         fill="none"
       >
@@ -45,17 +45,16 @@ const ServicesItems = [
     title: "Development",
     subTitle:
       "We are architects innovation trailblazers of technological advancement",
-    className: "md:rounded-es-none",
+    className: "lg:rounded-es-none",
     imagePos: "bottom-0 left-0 rounded-se-[1000px]",
     objectTarget: "-421.001px -1.859px / 331.407% 186.267% no-repeat",
     mobileImg: image2,
-
   },
   {
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-[42px] w-[42px] md:h-[52px] md:w-[52px]"
+        className="h-[42px] w-[42px] lg:h-[52px] lg:w-[52px]"
         viewBox="0 0 52 52"
         fill="none"
       >
@@ -68,16 +67,16 @@ const ServicesItems = [
     title: "Execution",
     subTitle:
       "We are architects innovation trailblazers of technological advancement",
-    className: "md:rounded-se-none",
+    className: "lg:rounded-se-none",
     imagePos: "top-0 right-0 rounded-es-[1000px]",
     objectTarget: "-145.096px -135.708px / 331.407% 186.267% no-repeat",
-    mobileImg: image3
+    mobileImg: image3,
   },
   {
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-[42px] w-[42px] md:h-[52px] md:w-[52px]"
+        className="h-[42px] w-[42px] lg:h-[52px] lg:w-[52px]"
         viewBox="0 0 52 52"
         fill="none"
       >
@@ -90,7 +89,7 @@ const ServicesItems = [
     title: "Testing & Maintenance",
     subTitle:
       "We are architects innovation trailblazers of technological advancement",
-    className: "md:rounded-ss-none",
+    className: "lg:rounded-ss-none",
     imagePos: "top-0 left-0 rounded-ee-[1000px]",
     objectTarget: "-429.515px -226.323px / 331.407% 186.267% no-repeat",
     mobileImg: image1,
@@ -98,7 +97,7 @@ const ServicesItems = [
 ];
 export default function TopServices() {
   return (
-    <div className="flex flex-wrap justify-center gap-5 md:gap-6">
+    <div className="flex flex-wrap justify-center gap-5 lg:gap-6">
       {ServicesItems.map((item, index) => (
         <ServiceCard1 key={index} {...item} />
       ))}

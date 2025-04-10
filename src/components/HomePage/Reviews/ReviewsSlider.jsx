@@ -36,13 +36,12 @@ export default function ReviewsSlider() {
   const groupCount = Math.ceil(Reviews.length / groupSize);
 
   const handleDotClick = (groupIndex) => {
-    if  (windowWidth >= 768) {
+    if (windowWidth >= 768) {
       swiperRefDesktop.current.slideTo(groupIndex);
     }
-    if(windowWidth >= 640) {
+    if (windowWidth >= 640) {
       swiperRefTablet.current.slideTo(groupIndex);
-    }
-    else {
+    } else {
       swiperRefMobile.current.slideTo(groupIndex);
     }
   };
@@ -55,9 +54,9 @@ export default function ReviewsSlider() {
 
   return (
     <div className="flex justify-center gap-x-6">
-      <div className="group relative flex h-fit w-full flex-col items-center gap-y-[40px] md:gap-y-[50px]">
+      <div className="group relative flex h-fit w-full flex-col items-center gap-y-[40px] lg:gap-y-[50px]">
         {/* Desktop Swiper */}
-        <div className="hidden w-full md:block">
+        <div className="hidden w-full lg:block">
           <Swiper
             slidesPerView={1}
             slidesPerGroup={1}
@@ -84,7 +83,7 @@ export default function ReviewsSlider() {
         </div>
 
         {/* Tablet Swiper */}
-        <div className="hidden w-full sm:block md:hidden">
+        <div className="hidden w-full sm:block lg:hidden">
           <Swiper
             slidesPerView={1}
             slidesPerGroup={1}

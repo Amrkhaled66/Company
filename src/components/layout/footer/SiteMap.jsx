@@ -20,13 +20,13 @@ const Map = [
 
 export default function SiteMap() {
   return (
-    <div className="flex flex-1 flex-col md:flex-row gap-y-8 justify-between">
+    <div className="flex flex-1 flex-col justify-between gap-y-8 lg:flex-row">
       {Map.map((item, index) => (
         <div key={index} className="space-y-[28px]">
-          <h4 className="font-bold text-xl ">{item.title}</h4>
+          <h4 className="text-xl font-bold">{item.title}</h4>
           <div className="space-y-[20px]">
             {item.elements.map((element, index) => (
-              <p key={index} className=" hover:underline cursor-pointer">
+              <p key={index} className="cursor-pointer hover:underline">
                 {element}
               </p>
             ))}

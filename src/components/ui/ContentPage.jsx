@@ -11,7 +11,9 @@ export default function ContentPage({ children, title, img }) {
         }}
         className="py-[155px] text-center text-white"
       >
-        <h3 className=" text-[36px] md:text-[66px] leading-relaxed font-bold">{title}</h3>
+        <h3 className="text-[36px] leading-relaxed font-bold lg:text-[66px]">
+          {title}
+        </h3>
         <div className="space-x-2">
           <Link className="hover:underline" to="/">
             Home

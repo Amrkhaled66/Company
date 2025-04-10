@@ -6,7 +6,7 @@ import promo4 from "src/assets/promo4.webp";
 const Image = ({ img, className }) => {
   return (
     <div
-      className={`h-[180px] w-[165px] overflow-hidden rounded-[55px] sm:h-[254px] sm:w-[330px] md:h-[254px] md:w-[276px] md:rounded-[74px] ${className}`}
+      className={`h-[180px] w-[165px] overflow-hidden rounded-[55px] sm:h-[254px] sm:w-[330px] lg:h-[254px] lg:w-[276px] lg:rounded-[74px] ${className}`}
     >
       <img src={img} alt="promo" className="h-full w-full object-cover" />
     </div>
@@ -15,7 +15,7 @@ const Image = ({ img, className }) => {
 
 export default function Images() {
   return (
-    <div className="grid grid-cols-2 gap-3 sm:gap-5 md:gap-6">
+    <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:gap-6">
       <Image img={promo4} className="!rounded-ee-none" />
       <Image img={promo2} className="!rounded-es-none" />
       <Image img={promo3} className="!rounded-se-none" />
